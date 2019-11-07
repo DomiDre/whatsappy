@@ -1,7 +1,5 @@
 # Whatsappy
-Fire up a selenium browser, log-in to web whatsapp by the QR code and feel free
-to interact with whatsapp using python as you like
-
+Fire up a selenium browser, log-in to web whatsapp by the QR code and feel free to interact with whatsapp using python as you like
 
 ## Prerequisites
 A selenium webdriver is needed and for now only Firefox is supported.
