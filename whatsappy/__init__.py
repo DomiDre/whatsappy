@@ -1,1 +1,1 @@
-from ._whatsappy import run, open_chat, send_message
+from ._whatsappy import run, open_chat, send_message, read_messages
