@@ -8,7 +8,7 @@ with open('LICENSE') as f:
 
 setup(
   name='whatsappy',
-  version='1.0.0',
+  version='1.1.0',
   description='Run Whatsapp in Selenium for programmatic access',
   url='https://github.com/DomiDre/whatsappy',
   author='Dominique Dresen',
