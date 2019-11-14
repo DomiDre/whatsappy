@@ -129,7 +129,11 @@ def identify_chat_element(chat_element):
   else:
     return
 
-  chat_childs = chat_element.find_elements_by_xpath('div/div/div/div')
+  try:
+    chat_childs = chat_element.find_elements_by_xpath('div/div/div/div')
+  except NoSuchElementException:
+    return
+
   text_containing_child = None
   timestamp_name = None
   for chat_child in chat_childs:
@@ -137,6 +141,9 @@ def identify_chat_element(chat_element):
     if timestamp_name:
       text_containing_child = chat_child
       break
+  
+  if text_containing_child is None:
+    return
 
   chat_text = None
   try:
